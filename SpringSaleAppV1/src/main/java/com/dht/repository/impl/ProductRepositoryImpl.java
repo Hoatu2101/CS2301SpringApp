@@ -102,10 +102,12 @@ public class ProductRepositoryImpl implements ProductRepository {
     }
 //    
     @Override
-    public void deleteProductById(int id) {
+    public void deleteProduct(int id) {
           Session session = this.factory.getObject().getCurrentSession();
             Product p = this.getProductById(id);
             session.remove(p);
         
     }
+
+    
 }

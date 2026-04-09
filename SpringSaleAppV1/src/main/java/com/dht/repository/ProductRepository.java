@@ -18,6 +18,6 @@ public interface ProductRepository {
 
     void addOrUpdateProduct(Product p);
 
-    public Product getProductById(int id);
-    void deleteProductById(int id);
+    Product getProductById(int id);
+    void deleteProduct(int id);
 }
